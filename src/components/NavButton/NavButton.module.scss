@@ -1,0 +1,36 @@
+.simpleNavBtn {
+  width: 100%;
+  height: 100%;
+  color: var(--cta-btn-color);
+  text-transform: capitalize;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+  cursor: pointer;
+  transition: all .25s cubic-bezier(.075,.82,.165,1);
+  padding: 0.5rem 0.5rem 1rem 0.5rem;
+  font-family: "Martel Sans SemiBold", Helvetica, sans-serif;
+  font-size: 20px;
+  line-height: 14px;
+  white-space: nowrap;
+  position: relative;
+
+  &:after {
+    bottom: 0.25rem;
+    content: '';
+    display: block;
+    height: 1px;
+    position: absolute;
+    transition: all .25s cubic-bezier(.075,.82,.165,1) .1s;
+    width: 0;
+    background: var(--cta-btn-color);
+    left: 1rem;
+  }
+
+  &:hover {
+    &:after {
+      width: calc(100% - 2rem);
+    }
+  }
+}

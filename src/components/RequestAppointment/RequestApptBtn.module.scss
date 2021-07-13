@@ -1,0 +1,21 @@
+.ctaLink {
+  width: 30%;
+  min-width: 200px;
+  max-width: 100px;
+  height: 100%;
+  background: var(--cta-btn-color);
+  color: #fff;
+  border: 2px solid var(--cta-btn-color);
+  border-radius: 50px;
+  text-transform: uppercase;
+  text-decoration: none;
+  padding: 22px;
+  text-align: center;
+  font-family: "Martel Sans Extra Bold", Helvetica, sans-serif;
+  font-size: 1.2rem;
+
+  &:hover {
+    background: #ffffff;
+    color: var(--cta-btn-color);
+  }
+}

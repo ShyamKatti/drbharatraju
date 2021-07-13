@@ -1,0 +1,73 @@
+.bannerContainer {
+  max-width: 1000px;
+  width: 70vw;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+
+  @media only screen and (min-width: 1201px) {
+    max-width: 1200px;
+    height: 75vh;
+    max-height: 650px;
+  }
+
+  @media only screen and (max-width: 768px) {
+    width: 100vw;
+    max-width: 100vw;
+  }
+}
+
+.fractureContent {
+  font-family: "Martel Sans Regular", Helvetica, sans-serif;
+  font-size: 1.2rem;
+  max-width: 75vw;
+  padding: 3rem;
+  margin: auto;
+
+  .symptomsSection, .diagnosisSection, .treatmentSection {
+    padding: 0;
+    margin: 0;
+    font-family: inherit;
+    font-size: 1.2rem;
+
+    li {
+      margin-left: 0.5rem;
+      margin-bottom: 0.8rem;
+    }
+
+    p {
+      margin-left: 1rem;
+    }
+  }
+
+  .callOutService {
+    font-family: inherit;
+    font-size: 1.2rem;
+    margin-top: 2rem;
+    padding: 0.5rem;
+
+    .callOutText {
+      color: var(--cta-btn-color);
+      font-family: "Martel Sans Extra Bold", Helvetica, sans-serif;
+      font-size: 2rem;
+    }
+  }
+
+  @media only screen and (max-width: 320px) {
+    padding: 0.5rem;
+    margin: 0;
+    justify-content: center;
+    align-items: center;
+    max-width: 100vw;
+  }
+
+  @media only screen and (min-width: 321px) and (max-width: 768px) {
+    padding: 0.8rem;
+    margin: 0;
+    justify-content: center;
+    align-items: center;
+    max-width: 95vw;
+  }
+}

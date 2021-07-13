@@ -1,0 +1,40 @@
+.servicesPage {
+  width: 100vw;
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: flex-start;
+  align-items: center;
+
+  .pageTitle {
+    width: 100%;
+    font-family: "Martel Sans Extra Bold", Helvetica, sans-serif;
+    font-size: 2.5rem;
+    text-align: center;
+    color: var(--cta-btn-color);
+
+    @media only screen and (min-width: 1201px) {
+      margin-top: 150px;
+    }
+  }
+
+  .servicesContent {
+    width: 100%;
+    max-width: 100%;
+    //height: max-content;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+    flex: 0 1 auto;
+    align-content: center;
+    height: fit-content;
+    margin-top: 50px;
+
+
+
+    @media only screen and (max-width: 768px) {
+      max-width: 95%;
+      flex-flow: column nowrap;
+    }
+  }
+}

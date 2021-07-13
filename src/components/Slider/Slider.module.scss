@@ -1,0 +1,59 @@
+$mobile : 1000px;
+$tablet:1280px;
+
+@mixin font($font, $size, $height: 1, $color: #33375a) {
+    font-family: "Martel Sans SemiBold", sans-serif;
+    font-size: $size;
+    line-height: $height;
+    color: $color;
+
+    @if $font == Bold {
+        font-family: "Martel Sans Extra Bold", sans-serif;
+    }
+    @if $font == Regular {
+        font-family: "Martel Sans Regular", sans-serif !important;
+    }
+}
+
+.reviewContainer {
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+    height: fit-content;
+    max-height: 400px;
+    margin-top: 1rem;
+
+    .review {
+        text-align: center;
+        .textValue {
+            font-weight: 500;
+            @media screen and (min-width: 769px) and (max-width: 1300px){
+                @include font(Regular, 22px, 33px, #32373C);
+            }
+
+            @media screen and (min-width: 320px) and (max-width: 768px) {
+                @include font(Regular, 20, 28px, #32373C);
+            }
+
+            @media screen and (min-width: 1301px) {
+                @include font(Regular, 1.5rem, 42px, #32373C);
+            }
+        }
+
+        .reviewerName {
+            display: block;
+            @media only screen and (max-width: 768px) {
+                @include font(Bold, 1.2rem, 30px, #32373C);
+            }
+
+            @media only screen and (min-width: 769px) {
+                @include font(Bold, 1.2rem, 30px, #32373C);
+            }
+        }
+    }
+
+    @media only screen and (max-width: 768px) {
+        width: 70%;
+    }
+}
+

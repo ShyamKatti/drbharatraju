@@ -1,0 +1,19 @@
+@mixin font($font, $size, $height: 1, $color: #00000) {
+    font-family: "Martel Sans Regular", sans-serif;
+    font-size: $size;
+    line-height: $height;
+    color: $color;
+
+    @if $font == Bold {
+        font-family: "Martel Sans Extra Bold", sans-serif;
+    }
+    @if $font == Regular {
+        font-family: "Martel Sans Regular", sans-serif !important;
+    }
+    @if $font == Medium {
+        font-family: "Martel Sans SemiBold", Helvetica, sans-serif;
+    }
+    @if $font == ExtraBold {
+        font-family: "Martel Sans Extra Bold", Helvetica, sans-serif;
+    }
+}
