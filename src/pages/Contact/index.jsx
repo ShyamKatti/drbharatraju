@@ -22,7 +22,7 @@ export const Contact = () => {
                             </div>
                             <div className={styles.phoneNumber}>
                                 Call us at: <a href="tel: 02227744239">(022) 2774 4239</a> or
-                                <a href="tel:02227744229">(022) 2774 4229</a>
+                                <a href="tel:02227744229"> (022) 2774 4229</a>
                             </div>
                         </div>
                         <div className={styles.locationAddress}>

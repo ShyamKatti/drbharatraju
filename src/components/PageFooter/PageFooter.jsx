@@ -238,12 +238,12 @@ export const PageFooter = () => {
             <FooterSection alignment='row'>
               <ul className={styles.mediaIconList}>
                 <li className={styles.mediaIcon}>
-                  <a href="#" className={styles.fbIcon}>
+                  <a href="https://www.facebook.com/BharatKumarOrthopaedic" className={styles.fbIcon} target="_blank" rel="noreferrer">
                     <img src={fbIcon} alt="Facebook page" />
                   </a>
                 </li>
                 <li className={styles.mediaIcon}>
-                  <a href="#" className={styles.googleIcon}>
+                  <a href="https://g.page/DrBharatKumarOrthopaedic?share" className={styles.googleIcon} target="_blank" rel="noreferrer">
                     <img src={gIcon} alt="Google Business page" />
                   </a>
                 </li>
