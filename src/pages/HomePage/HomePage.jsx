@@ -15,6 +15,7 @@ import {ServiceTile} from "../../components/Tile/Tile";
 import drImg from "../../assets/images/drbharatraju.jpeg";
 import homePageBanner from "../../assets/images/homepage_banner.jpeg";
 import {RequestApptBtn} from "../../components/RequestAppointment/RequestApptBtn";
+import Fade from "react-reveal/Fade";
 
 
 export const HomePage = () => {
@@ -26,35 +27,55 @@ export const HomePage = () => {
           <Desktop>
             <div className={styles.row}>
               <div className={styles.leftSide}>
-                <div className={styles.treatmentImg}>
-                  <img src={homePageBanner} alt="Orthopedic doctor in Navi Mumbai" />
-                </div>
-                <div className={styles.docImg}>
-                  <img src={drImg} alt="Dr Bharat Raju, Kharghar" />
-                </div>
+                <Fade left>
+                  <div className={styles.treatmentImg}>
+                    <img src={homePageBanner} alt="Orthopedic doctor in Navi Mumbai" />
+                  </div>
+                </Fade>
+                <Fade right>
+                  <div className={styles.docImg}>
+                    <img src={drImg} alt="Dr Bharat Raju, Kharghar" />
+                  </div>
+                </Fade>
               </div>
-              <div className={styles.rightSide}>
-                <div className={styles.docName}>Orthopedic surgeon in Navi Mumbai</div>
-                <div className={styles.captionSection}>
+              <Fade bottom>
+                <div className={styles.rightSide}>
+                  <div className={styles.docName}>Orthopedic surgeon in Navi Mumbai</div>
+                  <div className={styles.captionSection}>
                   <span className={styles.caption}>
                     We listen.
                   </span>
-                  <span className={styles.caption}>
+                    <span className={styles.caption}>
                     We diagnose.
                   </span>
-                  <span className={styles.caption}>
+                    <span className={styles.caption}>
                     We care.
                   </span>
+                  </div>
+                  <div className={styles.actions}>
+                    <RequestApptBtn actionSrc="https://payu.in/web/7C18937AD79349CBD7AC6880CF03B066" />
+                    <a href="tel:02227744239" className={styles.ctaCall}>
+                      call us at: (022) 27744239
+                    </a>
+                  </div>
                 </div>
-                <div className={styles.actions}>
-                  <RequestApptBtn actionSrc="https://payu.in/web/7C18937AD79349CBD7AC6880CF03B066" />
-                  <a href="tel:02227744239" className={styles.ctaCall}>
-                    call us at: (022) 27744239
-                  </a>
-                </div>
-              </div>
+              </Fade>
             </div>
           </Desktop>
+          <Mobile>
+            <div className={styles.bannerImage}>
+              <img src={drImg} alt="Dr. Bharat Raju, Kharghar"></img>
+            </div>
+            <div className={styles.mobileBannerText}>
+              Meet Dr. Bharat Raju
+            </div>
+            <div className={styles.mobileActions}>
+              <RequestApptBtn actionSrc="https://payu.in/web/7C18937AD79349CBD7AC6880CF03B066" />
+              <a href="tel:02227744239" className={styles.ctaCall}>
+                call us at: (022) 27744239
+              </a>
+            </div>
+          </Mobile>
         </div>
         <div className={styles.serviceContainer}>
           <h3 className={styles.servicesHeading}>Our Services</h3>
@@ -73,7 +94,9 @@ export const HomePage = () => {
           <Mobile>
             {
               SERVICES.map((service) => {
-                return <ServiceTile name={service.name} path={service.path} backgroundImg={service.backgroundImg}/>
+                return <ServiceTile name={service.name}
+                                    path={service.path}
+                                    backgroundImg={service.backgroundImg}/>
               })
             }
           </Mobile>

@@ -1,5 +1,10 @@
 .serviceTypeContent {
   margin-top: 0.5rem;
   width: 100%;
-  display: block;
+  display: flex;
+  flex-flow: column;
+
+  @media only screen and (max-width: 768px) {
+    margin: 0;
+  }
 }

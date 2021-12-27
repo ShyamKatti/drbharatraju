@@ -20,7 +20,7 @@ export const Navigation = () => {
         <nav className={styles.desktopNav}>
           <ul className={styles.navList}>
             <li className={styles.navItem}>
-              <NavButton text="About Me" />
+              <NavButton text="About Me" path="/about-dr-bharat"/>
             </li>
             <li className={styles.navItem}>
               <NavButton text="Services" path="/services" />
@@ -45,13 +45,13 @@ export const Navigation = () => {
             <nav className={styles.hamburgerNav}>
               <ul className={styles.mobileNavList}>
                 <li className={styles.navListItem}>
-                  <a href="/about" className={styles.navLink}>About Me</a>
+                  <a href="/about-dr-bharat" className={styles.navLink}>About Me</a>
                 </li>
                 <li className={styles.navListItem}>
                   <a href="/services" className={styles.navLink}>Services</a>
                 </li>
                 <li className={styles.navListItem}>
-                  <a href="/contac" className={styles.navLink}>Contact</a>
+                  <a href="/contact" className={styles.navLink}>Contact</a>
                 </li>
               </ul>
             </nav>

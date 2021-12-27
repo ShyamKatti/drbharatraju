@@ -24,19 +24,19 @@ $tablet:1280px;
     margin-top: 1rem;
 
     .review {
-        text-align: center;
+        text-align: left;
         .textValue {
             font-weight: 500;
             @media screen and (min-width: 769px) and (max-width: 1300px){
-                @include font(Regular, 22px, 33px, #32373C);
+                @include font(Regular, 20px, 33px, #32373C);
             }
 
             @media screen and (min-width: 320px) and (max-width: 768px) {
-                @include font(Regular, 20, 28px, #32373C);
+                @include font(Regular, 20px, 28px, #32373C);
             }
 
             @media screen and (min-width: 1301px) {
-                @include font(Regular, 1.5rem, 42px, #32373C);
+                @include font(Regular, 20px, 42px, #32373C);
             }
         }
 

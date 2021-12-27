@@ -41,7 +41,6 @@ export const PageFooter = () => {
             <FooterSection sectionTitle="Locations" alignment='row'>
               <div className={styles.address}>
                 <span className={styles.locationTitle}>MITR Hospital, Kharghar</span>
-                <span className={styles.timing}>07:00pm - 09:00pm</span>
                 <div className={styles.locationAddress}>
                   <svg
                     height='50px'
@@ -62,7 +61,6 @@ export const PageFooter = () => {
               </div>
               <div className={styles.address}>
                 <span className={styles.locationTitle}>MGM Hospital, Vashi</span>
-                <span className={styles.timing}>04:00pm - 06:00pm</span>
                 <div className={styles.locationAddress}>
                   <svg
                     height='50px'
@@ -84,7 +82,6 @@ export const PageFooter = () => {
               </div>
               <div className={styles.address}>
                 <span className={styles.locationTitle}>Aayush Hospital, Kalyan</span>
-                <span className={styles.timing}>Wednesdays: 11am - 1pm</span>
                 <div className={styles.locationAddress}>
                   <svg
                     height='50px'
@@ -113,12 +110,18 @@ export const PageFooter = () => {
             <FooterSection alignment='row'>
               <ul className={styles.mediaIconList}>
                 <li className={styles.mediaIcon}>
-                  <a href="#" className={styles.fbIcon}>
+                  <a href="https://www.facebook.com/BharatKumarOrthopaedic"
+                     className={styles.fbIcon}
+                     target="_blank"
+                     rel="noreferrer">
                     <img src={fbIcon} alt="Facebook page" />
                   </a>
                 </li>
                 <li className={styles.mediaIcon}>
-                  <a href="#" className={styles.googleIcon}>
+                  <a href="https://g.page/DrBharatKumarOrthopaedic?share"
+                     className={styles.googleIcon}
+                     target="_blank"
+                     rel="noreferrer">
                     <img src={gIcon} alt="Google Business page" />
                   </a>
                 </li>

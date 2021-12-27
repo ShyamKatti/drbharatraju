@@ -6,8 +6,6 @@
 
   .homePageBody {
     background: #ffffff;
-    //scroll-snap-type: y mandatory;
-    //overflow-y: scroll;
     height: 100vh;
 
     .bannerContainer {
@@ -16,10 +14,8 @@
       height: 100vh;
       display: flex;
       flex-flow: row nowrap;
-      background-image: linear-gradient(90deg,rgba(40,99,112,0.3) 29%,#f4f1e8 10%)!important;
+      background-image: linear-gradient(90deg,rgba(40,99,112,0.3) 29%,#f4f1e8 10%) !important;
       background-color: #eaeaea !important;
-      //scroll-snap-align: start;
-      //scroll-snap-stop: always;
 
       .row {
         width: 100%;
@@ -133,6 +129,13 @@
           }
         }
       }
+
+      @media screen and (max-width: 768px) {
+        background-image: unset !important;
+        background-color: #f4f1e8 !important;
+        flex-flow: column nowrap;
+        margin-top: 100px;
+      }
     }
 
     .serviceContainer {
@@ -144,8 +147,6 @@
       align-items: center;
       padding: 0;
       margin: 0;
-      //scroll-snap-align: start;
-      //scroll-snap-stop: always;
 
       .servicesHeading {
         width: 100%;
@@ -160,6 +161,10 @@
         display: flex;
         flex-flow: row nowrap;
         width: 95%;
+      }
+
+      @media screen and (min-width: 320px) and (max-width: 768px) {
+        height: fit-content;
       }
     }
 
@@ -204,6 +209,46 @@
         max-height: 600px;
         width: 100%;
         flex-flow: row nowrap;
+      }
+    }
+
+    .bannerImage {
+      width: 100vw;
+      height: 70%;
+
+      img {
+        width: 100%;
+        height: 100%;
+      }
+    }
+
+    .mobileBannerText {
+      text-align: center;
+      font-size: 1.8rem;
+      color: var(--cta-btn-color);
+      font-weight: 700;
+    }
+
+    .mobileActions {
+      width: 100vw;
+      margin: auto;
+      display: flex;
+      flex-flow: column nowrap;
+      justify-content: space-evenly;
+      align-items: center;
+
+      .ctaCall {
+        width: 70vw;
+        height: 50px;
+        text-transform: uppercase;
+        background: transparent;
+        border: 2px solid #99c0c5;
+        border-radius: 50px;
+        color: var(--cta-btn-color);
+        font-family: "Martel Sans Extra Bold", Helvetica, sans-serif;
+        text-decoration: none;
+        padding: 10px;
+        margin-top: 1rem;
       }
     }
   }

@@ -9,6 +9,7 @@ import { ArthritisPage } from "../pages/ArthritisTreatment";
 import { FractureTreatmentPage } from "../pages/FractureTreatment";
 import { SportsInjuryPage } from "../pages/SportsInjuries";
 import { Contact } from "../pages/Contact";
+import { AboutMe } from "../pages/AboutMe";
 
 export const SiteRouter = () => {
   return (
@@ -40,6 +41,9 @@ export const SiteRouter = () => {
         </Route>
         <Route key="contact" path="/contact" exact>
           <Contact />
+        </Route>
+        <Route key="about-me" path="/about-dr-bharat" exact>
+          <AboutMe />
         </Route>
       </Switch>
     </BrowserRouter>

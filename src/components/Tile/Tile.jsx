@@ -16,7 +16,7 @@ export const ServiceTile = ({ name, path, backgroundImg }) => {
          style={{backgroundImage: `url(${backgroundImg})`}}
          onClick={onClickHandler}>
       <div className={styles.tile_bg}>
-        <h3 className={styles.serviceName}>{name}</h3>
+        <span className={styles.serviceName}>{name}</span>
       </div>
     </div>
   )
