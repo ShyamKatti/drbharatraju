@@ -3,6 +3,7 @@ import { PageFooter } from "../../components/PageFooter/PageFooter";
 import { PageHeader } from "../../components/PageHeader/PageHeader";
 import styles from "./AboutMe.module.scss";
 import drImg from "../../assets/images/drbharatraju.jpeg";
+import aboutMeImg from "../../assets/images/DrBharatKumarSitting_v1.png";
 
 
 export const AboutMe = () => {
@@ -11,7 +12,7 @@ export const AboutMe = () => {
             <PageHeader />
             <div className={styles.aboutMeContainer}>
                 <div className={styles.imageContainer}>
-                    <img src={drImg} alt="Dr. Bharat Raju" />
+                    <img src={aboutMeImg} alt="Dr. Bharat Raju" />
                 </div>
                 <div className={styles.detailsContainer}>
                     <h3>Meet, Dr. Bharat Kumar!</h3>

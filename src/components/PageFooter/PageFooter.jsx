@@ -1,5 +1,5 @@
 import React from "react";
-import { Desktop, Mobile, TabletDown, DesktopLarge } from "../../utils/_devices";
+import { Desktop, Mobile, TabletDown } from "../../utils/_devices";
 import { FooterSection } from "../FooterSection/FooterSection";
 import { FooterNavLink } from "../FooterNavLink/FooterNavLink";
 import fbIcon from "../../assets/images/facebook-icon.svg";

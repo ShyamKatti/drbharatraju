@@ -19,7 +19,7 @@ export const Carousel = (props) => {
       } else if (viewPortWidth === 768) {
         setScreenWidth(window.innerWidth);
       } else if (titleEl) {
-        const {width, height} = titleEl.getBoundingClientRect();
+        const {width} = titleEl.getBoundingClientRect();
         setScreenWidth(window.innerWidth - width);
       }
     }
