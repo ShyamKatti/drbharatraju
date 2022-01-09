@@ -15,14 +15,12 @@ export const Carousel = (props) => {
       const titleEl = document.querySelector("#reviewTitleId");
       const viewPortWidth = window.innerWidth;
       if (viewPortWidth < 768) {
-        setScreenWidth(window.innerWidth - 30);
+        setScreenWidth(window.innerWidth);
       } else if (viewPortWidth === 768) {
-        setScreenWidth(window.innerWidth - 30);
+        setScreenWidth(window.innerWidth);
       } else if (titleEl) {
         const {width, height} = titleEl.getBoundingClientRect();
         setScreenWidth(window.innerWidth - width);
-        console.log(width);
-        console.log(height);
       }
     }
   }, []);

@@ -1,7 +1,6 @@
 import React from "react";
 import { Route, BrowserRouter, Switch} from "react-router-dom";
 import MainPage from "../MainPage";
-import { Anthroscopy } from "../pages/Anthroscopy";
 import { HipReplacementPage } from "../pages/HipReplacement";
 import { KneeReplacementPage } from "../pages/KneeJointReplacement";
 import { ServicesMainPage } from "../pages/Services/ServicesMainPage";
@@ -17,9 +16,6 @@ export const SiteRouter = () => {
       <Switch>
         <Route key="home" path="/" exact>
           <MainPage />
-        </Route>
-        <Route key="anthroscopy" path="/services/arthroscopy" exact>
-          <Anthroscopy />
         </Route>
         <Route key="hip-replacement" path="/services/hip-replacement" exact>
           <HipReplacementPage />

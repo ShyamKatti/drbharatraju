@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import {Desktop, Mobile} from "../../utils/_devices";
+import {Desktop, Mobile, TabletDown} from "../../utils/_devices";
 import styles from "./Navigation.module.scss";
 import { NavButton} from "../NavButton/NavButton";
 import Icon from "../Icon/Icon";
@@ -9,8 +9,6 @@ export const Navigation = () => {
   const [ isMenuOpen, setIsMenuOpen ] = useState(false);
 
   const handleNavClick = (event) => {
-    //event.preventDefault();
-    console.log("Clicked");
     setIsMenuOpen(!isMenuOpen);
   };
 
@@ -39,6 +37,13 @@ export const Navigation = () => {
           </button>
         </div>
       </Mobile>
+      <TabletDown>
+        <div className={styles.hamburgerMenu}>
+          <button onClick={() => handleNavClick()}>
+            <Icon name={!isMenuOpen ? "burger" : "close"}/>
+          </button>
+        </div>
+      </TabletDown>
       {
         isMenuOpen && (
           <div className={styles.hamburgerMenuContent}>

@@ -97,6 +97,9 @@
           color: var(--cta-btn-color);
           margin-left: 1rem;
         }
+        @media screen and (max-width: 1200px) {
+          padding-left: unset;
+        }
       }
     }
   }

@@ -12,7 +12,7 @@ const mediaQueries = {
 export const DesktopLarge = ({ children }) => (<MediaQuery minWidth={mediaQueries.xLargeMin} >{children}</MediaQuery>);
 export const Desktop = ({ children }) => (<MediaQuery minWidth={mediaQueries.largeMin} >{children}</MediaQuery>);
 export const Tablet = ({ children }) => (<MediaQuery minWidth={mediaQueries.mediumMax} maxWidth={mediaQueries.largeMin} >{children}</MediaQuery>);
-export const TabletDown = ({ children }) => (<MediaQuery maxWidth={mediaQueries.mediumMax} >{children}</MediaQuery>);
+export const TabletDown = ({ children }) => (<MediaQuery minWidth={mediaQueries.smallMax} maxWidth={mediaQueries.mediumMax} >{children}</MediaQuery>);
 export const Mobile = ({ children }) => (<MediaQuery maxWidth={mediaQueries.smallMax} >{children}</MediaQuery>);
 export const Default = ({ children }) => (<MediaQuery minWidth={mediaQueries.smallMax} >{children}</MediaQuery>);
 

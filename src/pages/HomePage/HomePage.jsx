@@ -4,15 +4,15 @@ import { PageHeader } from "../../components/PageHeader/PageHeader";
 import { SkewedTile } from "../../components/SkewedTile";
 import { PageFooter } from "../../components/PageFooter/PageFooter";
 import { Carousel } from "../../components/Slider";
-import { Desktop, Mobile } from "../../utils/_devices";
-import arthroscopyImg from "../../assets/images/arthroscopy_banner.jpeg";
+import { Desktop, Mobile, TabletDown } from "../../utils/_devices";
+import drBharatMobile2 from "../../assets/images/DrBharat_276_255.svg"
+import drBharatDesktop from "../../assets/images/drbharat1.jpg";
 import hipJointImg from "../../assets/images/hip_replacement_banner.jpeg";
 import kneeJointImg from "../../assets/images/knee_replacemenet_banner.jpeg";
 import sportsImg from "../../assets/images/sports_injuries_banner.jpeg";
 import arthritisImg from "../../assets/images/arthritis_banner.jpeg";
 import fractureImg from "../../assets/images/fracture_treatment_banner.jpeg";
 import {ServiceTile} from "../../components/Tile/Tile";
-import drImg from "../../assets/images/drbharatraju.jpeg";
 import homePageBanner from "../../assets/images/homepage_banner.jpeg";
 import {RequestApptBtn} from "../../components/RequestAppointment/RequestApptBtn";
 import Fade from "react-reveal/Fade";
@@ -34,7 +34,7 @@ export const HomePage = () => {
                 </Fade>
                 <Fade right>
                   <div className={styles.docImg}>
-                    <img src={drImg} alt="Dr Bharat Raju, Kharghar" />
+                    <img src={drBharatDesktop} alt="Dr Bharat Raju, Kharghar" />
                   </div>
                 </Fade>
               </div>
@@ -64,10 +64,10 @@ export const HomePage = () => {
           </Desktop>
           <Mobile>
             <div className={styles.bannerImage}>
-              <img src={drImg} alt="Dr. Bharat Raju, Kharghar"></img>
+              <object data={drBharatMobile2} type="image/svg+xml"></object>
             </div>
             <div className={styles.mobileBannerText}>
-              Meet Dr. Bharat Raju
+              Meet Dr. Bharat Kumar
             </div>
             <div className={styles.mobileActions}>
               <RequestApptBtn actionSrc="https://payu.in/web/7C18937AD79349CBD7AC6880CF03B066" />
@@ -76,6 +76,44 @@ export const HomePage = () => {
               </a>
             </div>
           </Mobile>
+          <TabletDown>
+            <div className={styles.row}>
+              <div className={styles.leftSide}>
+                <Fade left>
+                  <div className={styles.treatmentImg}>
+                    <img src={homePageBanner} alt="Orthopedic doctor in Navi Mumbai" />
+                  </div>
+                </Fade>
+                <Fade right>
+                  <div className={styles.docImg}>
+                    <img src={drBharatDesktop} alt="Dr Bharat Raju, Kharghar" />
+                  </div>
+                </Fade>
+              </div>
+              <Fade bottom>
+                <div className={styles.rightSide}>
+                  <div className={styles.docName}>Orthopedic surgeon in Navi Mumbai</div>
+                  <div className={styles.captionSection}>
+                    <span className={styles.caption}>
+                      We listen.
+                    </span>
+                      <span className={styles.caption}>
+                      We diagnose.
+                    </span>
+                      <span className={styles.caption}>
+                      We care.
+                    </span>
+                  </div>
+                  <div className={styles.actions}>
+                    <RequestApptBtn actionSrc="https://payu.in/web/7C18937AD79349CBD7AC6880CF03B066" />
+                    <a href="tel:02227744239" className={styles.ctaCall}>
+                      call us at: (022) 27744239
+                    </a>
+                  </div>
+                </div>
+              </Fade>
+            </div>
+          </TabletDown>
         </div>
         <div className={styles.serviceContainer}>
           <h3 className={styles.servicesHeading}>Our Services</h3>
@@ -100,6 +138,15 @@ export const HomePage = () => {
               })
             }
           </Mobile>
+          <TabletDown>
+            {
+              SERVICES.map((service) => {
+                return <ServiceTile name={service.name}
+                                    path={service.path}
+                                    backgroundImg={service.backgroundImg}/>
+              })
+            }
+          </TabletDown>
         </div>
         <div className={styles.reviews}>
           <h2 className={styles.reviewTitle} id="reviewTitleId">Become a patient for life.</h2>
@@ -139,11 +186,6 @@ const REVIEWS = [
 ];
 
 const SERVICES = [
-  {
-    name: 'Arthroscopy',
-    path: '/services/arthroscopy',
-    backgroundImg: arthroscopyImg
-  },
   {
     name: 'Hip Replacement',
     path: '/services/hip-replacement',
