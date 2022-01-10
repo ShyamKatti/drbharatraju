@@ -89,8 +89,8 @@ export const ArthritisPage = () => {
           <p>
             Call our office at <a href="tel: +022 2774 4239">022 2774 4239</a> or
             <a href="tel: +022 2774 4229"> 022 2774 4229</a> to request your
-            consultation with Dr. Bharat Raju. Come see why so many in Navi Mumbai
-            trust their arthritis care to Dr. Bharat Raju! We proudly offer same-day and
+            consultation with Dr. Bharat Kumar. Come see why so many in Navi Mumbai
+            trust their arthritis care to Dr. Bharat Kumar! We proudly offer same-day and
             weekend appointments with little wait times. Start your path back to a
             pain-free life today!
           </p>

@@ -6,7 +6,7 @@ import { PageFooter } from "../../components/PageFooter/PageFooter";
 import { Carousel } from "../../components/Slider";
 import { Desktop, Mobile, TabletDown } from "../../utils/_devices";
 import drBharatMobile2 from "../../assets/images/DrBharat_276_255.svg"
-import drBharatDesktop from "../../assets/images/drbharat1.jpg";
+import drBharatDesktop from "../../assets/images/drbharat1.jpeg";
 import hipJointImg from "../../assets/images/hip_replacement_banner.jpeg";
 import kneeJointImg from "../../assets/images/knee_replacemenet_banner.jpeg";
 import sportsImg from "../../assets/images/sports_injuries_banner.jpeg";
@@ -34,7 +34,7 @@ export const HomePage = () => {
                 </Fade>
                 <Fade right>
                   <div className={styles.docImg}>
-                    <img src={drBharatDesktop} alt="Dr Bharat Raju, Kharghar" />
+                    <img src={drBharatDesktop} alt="Dr Bharat Kumar, Kharghar" />
                   </div>
                 </Fade>
               </div>
@@ -86,7 +86,7 @@ export const HomePage = () => {
                 </Fade>
                 <Fade right>
                   <div className={styles.docImg}>
-                    <img src={drBharatDesktop} alt="Dr Bharat Raju, Kharghar" />
+                    <img src={drBharatDesktop} alt="Dr Bharat Kumar, Kharghar" />
                   </div>
                 </Fade>
               </div>
