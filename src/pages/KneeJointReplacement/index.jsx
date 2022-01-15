@@ -3,7 +3,7 @@ import { ServiceType } from "../../components/ServiceType";
 import { HeroBanner } from "../../components/HeroBanner/HeroBanner";
 import { CollapsibleSection } from "../../components/CollapsibleSection/CollapsibleSection";
 import styles from "./KneeJoint.module.scss";
-import kneeReplacement from "../../assets/images/knee_replacemenet_banner.jpeg";
+import kneeReplacement from "../../assets/images/knee_replacement_ss.jpeg";
 
 
 export const KneeReplacementPage = () => {

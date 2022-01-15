@@ -3,7 +3,7 @@ import { ServiceType } from "../../components/ServiceType";
 import { HeroBanner } from "../../components/HeroBanner/HeroBanner";
 import { CollapsibleSection } from "../../components/CollapsibleSection/CollapsibleSection";
 import styles from "./Fracture.module.scss";
-import fractureBanner from "../../assets/images/fracture_treatment_banner.jpeg";
+import fractureBanner from "../../assets/images/fracture_ss.jpeg";
 
 export const FractureTreatmentPage = () => {
   return (

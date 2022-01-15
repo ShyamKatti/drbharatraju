@@ -7,11 +7,11 @@ import { Carousel } from "../../components/Slider";
 import { Desktop, Mobile, TabletDown } from "../../utils/_devices";
 import drBharatMobile2 from "../../assets/images/DrBharat_276_255.svg"
 import drBharatDesktop from "../../assets/images/drbharat1.jpeg";
-import hipJointImg from "../../assets/images/hip_replacement_banner.jpeg";
-import kneeJointImg from "../../assets/images/knee_replacemenet_banner.jpeg";
-import sportsImg from "../../assets/images/sports_injuries_banner.jpeg";
-import arthritisImg from "../../assets/images/arthritis_banner.jpeg";
-import fractureImg from "../../assets/images/fracture_treatment_banner.jpeg";
+import hipJointImg from "../../assets/images/arthritis_banner.jpeg";
+import kneeJointImg from "../../assets/images/knee_replacement_ss.jpeg";
+import sportsImg from "../../assets/images/sports_injury_ss.jpeg";
+import arthritisImg from "../../assets/images/arthritis_ss.jpeg";
+import fractureImg from "../../assets/images/fracture_ss.jpeg";
 import {ServiceTile} from "../../components/Tile/Tile";
 import homePageBanner from "../../assets/images/homepage_banner.jpeg";
 import {RequestApptBtn} from "../../components/RequestAppointment/RequestApptBtn";

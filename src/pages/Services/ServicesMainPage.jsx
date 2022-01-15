@@ -3,11 +3,11 @@ import { PageHeader } from "../../components/PageHeader/PageHeader";
 import { PageFooter } from "../../components/PageFooter/PageFooter";
 import { ServiceTile } from "../../components/Tile/Tile";
 import styles from "./ServiceMainPage.module.scss";
-import hipJointImg from "../../assets/images/hip_replacement_banner.jpeg";
-import kneeJointImg from "../../assets/images/knee_replacemenet_banner.jpeg";
-import sportsImg from "../../assets/images/sports_injuries_banner.jpeg";
-import arthritisImg from "../../assets/images/arthritis_banner.jpeg";
-import fractureImg from "../../assets/images/fracture_treatment_banner.jpeg";
+import hipJointImg from "../../assets/images/arthritis_banner.jpeg";
+import kneeJointImg from "../../assets/images/knee_replacement_ss.jpeg";
+import sportsImg from "../../assets/images/sports_injury_ss.jpeg";
+import arthritisImg from "../../assets/images/arthritis_ss.jpeg";
+import fractureImg from "../../assets/images/fracture_ss.jpeg";
 
 
 export const ServicesMainPage = () => {
