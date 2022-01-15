@@ -149,7 +149,7 @@ export const HomePage = () => {
           </TabletDown>
         </div>
         <div className={styles.reviews}>
-          <h2 className={styles.reviewTitle} id="reviewTitleId">Become a patient for life.</h2>
+          <h2 className={styles.reviewTitle} id="reviewTitleId">Your trusted Orthopedic advisor for life.</h2>
           <Carousel reviews={REVIEWS} />
         </div>
         <PageFooter />
