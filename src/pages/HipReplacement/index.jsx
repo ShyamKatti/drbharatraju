@@ -3,7 +3,7 @@ import { ServiceType } from "../../components/ServiceType";
 import { HeroBanner } from "../../components/HeroBanner/HeroBanner";
 import { CollapsibleSection } from "../../components/CollapsibleSection/CollapsibleSection";
 import styles from "./HipReplacement.module.scss";
-import hipReplaceBanner from "../../assets/images/arthritis_banner.jpeg";
+import hipReplaceBanner from "../../assets/images/hip_replacement_banner_zpxkye_square.jpeg";
 
 
 export const HipReplacementPage = () => {

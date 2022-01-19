@@ -140,13 +140,13 @@ export const PageFooter = () => {
                   <FooterNavLink linkText="Knee Joint Replacement" linkPath="/services/knee-replacement" />
                 </li>
                 <li className={styles.serviceItem}>
-                  <FooterNavLink linkText="Sports Injuries" linkPath="#" />
+                  <FooterNavLink linkText="Sports Injuries" linkPath="/services/sports-injury-treatment" />
                 </li>
                 <li className={styles.serviceItem}>
                   <FooterNavLink linkText="Arthritis Treatment" linkPath="/services/arthritis-treatment" />
                 </li>
                 <li className={styles.serviceItem}>
-                  <FooterNavLink linkText="Fracture Treatment" linkPath="#" />
+                  <FooterNavLink linkText="Fracture Treatment" linkPath="/services/fracture-treatment" />
                 </li>
               </ul>
             </FooterSection>

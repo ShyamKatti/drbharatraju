@@ -3,7 +3,7 @@ import { ServiceType } from "../../components/ServiceType";
 import { HeroBanner } from "../../components/HeroBanner/HeroBanner";
 import { CollapsibleSection } from "../../components/CollapsibleSection/CollapsibleSection";
 import styles from "./Arthrits.module.scss";
-import arthritisBanner from "../../assets/images/arthritis_ss.jpeg";
+import arthritisBanner from "../../assets/images/arthritis_ss_pajqkf_Square.jpeg";
 
 export const ArthritisPage = () => {
   return (

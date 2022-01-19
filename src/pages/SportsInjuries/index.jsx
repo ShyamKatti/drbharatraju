@@ -2,7 +2,7 @@ import React from "react";
 import { ServiceType } from "../../components/ServiceType";
 import { HeroBanner } from "../../components/HeroBanner/HeroBanner";
 import styles from "./SportInjuries.module.scss";
-import sportsBanner from "../../assets/images/sports_injury_ss.jpeg";
+import sportsBanner from "../../assets/images/sports_injury_ss_brjhbf-Square.jpeg";
 
 
 export const SportsInjuryPage = () => {
