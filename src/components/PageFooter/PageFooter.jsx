@@ -156,6 +156,7 @@ export const PageFooter = () => {
             <FooterSection sectionTitle="Locations" alignment='column'>
               <div className={styles.address}>
                 <span className={styles.locationTitle}>MITR Hospital, Kharghar</span>
+                <span className={styles.timing}>12:00pm - 02:00pm</span>
                 <span className={styles.timing}>07:00pm - 09:00pm</span>
                 <div className={styles.locationAddress}>
                   <svg
@@ -275,6 +276,7 @@ export const PageFooter = () => {
             <FooterSection sectionTitle="Locations" alignment='column'>
               <div className={styles.address}>
                 <span className={styles.locationTitle}>MITR Hospital, Kharghar</span>
+                <span className={styles.timing}>12:00pm - 02:00pm</span>
                 <span className={styles.timing}>07:00pm - 09:00pm</span>
                 <div className={styles.locationAddress}>
                   <svg

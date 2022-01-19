@@ -39,7 +39,7 @@ export const Contact = () => {
                                 <TimingIcon width="50px" height="50px"/>
                             </div>
                             <div className={styles.timing}>
-                                Monday-Saturday: 07:00pm to 09:00pm
+                                Monday-Saturday: 12pm to 2pm and 07:00pm to 09:00pm
                             </div>
                         </div>
                     </div>
