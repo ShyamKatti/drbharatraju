@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { ServiceType } from "../../components/ServiceType";
 import { HeroBanner } from "../../components/HeroBanner/HeroBanner";
 import styles from "./SportInjuries.module.scss";
@@ -6,6 +6,11 @@ import sportsBanner from "../../assets/images/sports_injury_ss_brjhbf-Square.jpe
 
 
 export const SportsInjuryPage = () => {
+
+    useEffect(() => {
+        window.scrollTo(0, 0);
+    }, []);
+
     return (
       <ServiceType>
       <div className={styles.bannerContainer}>

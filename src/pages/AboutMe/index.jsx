@@ -1,4 +1,4 @@
-import React from "react"
+import React, { useEffect } from "react"
 import { PageFooter } from "../../components/PageFooter/PageFooter";
 import { PageHeader } from "../../components/PageHeader/PageHeader";
 import styles from "./AboutMe.module.scss";
@@ -6,6 +6,11 @@ import aboutMeImg from "../../assets/images/DrBharatKumarSitting.jpeg";
 
 
 export const AboutMe = () => {
+
+    useEffect(() => {
+        window.scrollTo(0, 0);
+    }, []);
+
     return (
         <div className={styles.aboutMePage}>
             <PageHeader />

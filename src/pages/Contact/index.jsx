@@ -1,4 +1,4 @@
-import React from "react"
+import React, { useEffect } from "react"
 import { PageFooter } from "../../components/PageFooter/PageFooter";
 import { PageHeader } from "../../components/PageHeader/PageHeader";
 import styles from "./Contact.module.scss";
@@ -8,6 +8,10 @@ import { TimingIcon } from "../../components/Icon/TimingIcon";
 
 
 export const Contact = () => {
+    useEffect(() => {
+        window.scrollTo(0, 0);
+    }, []);
+
     return (
         <div className={styles.contactPage}>
             <PageHeader />

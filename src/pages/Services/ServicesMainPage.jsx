@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { PageHeader } from "../../components/PageHeader/PageHeader";
 import { PageFooter } from "../../components/PageFooter/PageFooter";
 import { ServiceTile } from "../../components/Tile/Tile";
@@ -11,6 +11,11 @@ import fractureImg from "../../assets/images/fracture_ss.jpeg";
 
 
 export const ServicesMainPage = () => {
+
+    useEffect(() => {
+        window.scrollTo(0, 0);
+    }, []);
+
   return (
     <div className={styles.servicesPage}>
       <PageHeader />

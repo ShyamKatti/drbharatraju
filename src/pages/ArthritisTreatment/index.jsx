@@ -1,4 +1,4 @@
-import React from "react";
+import React,  { useEffect } from "react";
 import { ServiceType } from "../../components/ServiceType";
 import { HeroBanner } from "../../components/HeroBanner/HeroBanner";
 import { CollapsibleSection } from "../../components/CollapsibleSection/CollapsibleSection";
@@ -6,6 +6,10 @@ import styles from "./Arthrits.module.scss";
 import arthritisBanner from "../../assets/images/arthritis_ss_pajqkf_Square.jpeg";
 
 export const ArthritisPage = () => {
+    useEffect(() => {
+        window.scrollTo(0, 0);
+    }, []);
+
   return (
     <ServiceType>
       <div className={styles.bannerContainer}>

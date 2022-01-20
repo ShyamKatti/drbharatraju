@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import styles from "./HomePage.module.scss";
 import { PageHeader } from "../../components/PageHeader/PageHeader";
 import { SkewedTile } from "../../components/SkewedTile";
@@ -19,6 +19,11 @@ import Fade from "react-reveal/Fade";
 
 
 export const HomePage = () => {
+
+    useEffect(() => {
+        window.scrollTo(0, 0);
+    }, []);
+
   return (
     <div className={styles.homePage}>
       <PageHeader />

@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { ServiceType } from "../../components/ServiceType";
 import { HeroBanner } from "../../components/HeroBanner/HeroBanner";
 import { CollapsibleSection } from "../../components/CollapsibleSection/CollapsibleSection";
@@ -7,6 +7,11 @@ import hipReplaceBanner from "../../assets/images/hip_replacement_banner_zpxkye_
 
 
 export const HipReplacementPage = () => {
+
+    useEffect(() => {
+        window.scrollTo(0, 0);
+    }, []);
+
   return (
     <ServiceType>
       <div className={styles.bannerContainer}>

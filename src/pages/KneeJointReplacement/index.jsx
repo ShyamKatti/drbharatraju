@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { ServiceType } from "../../components/ServiceType";
 import { HeroBanner } from "../../components/HeroBanner/HeroBanner";
 import { CollapsibleSection } from "../../components/CollapsibleSection/CollapsibleSection";
@@ -7,6 +7,11 @@ import kneeReplacement from "../../assets/images/knee_replacement_ss_tjxnmw-Squa
 
 
 export const KneeReplacementPage = () => {
+
+    useEffect(() => {
+        window.scrollTo(0, 0);
+    }, []);
+
   return (
     <ServiceType>
       <div className={styles.bannerContainer}>
