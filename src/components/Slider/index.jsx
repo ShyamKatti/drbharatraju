@@ -16,14 +16,11 @@ export const Carousel = (props) => {
       const viewPortWidth = window.innerWidth;
       if (viewPortWidth < 768) {
         setScreenWidth(window.innerWidth);
-        console.log(window.innerWidth);
       } else if (viewPortWidth === 768) {
         setScreenWidth(window.innerWidth);
-        console.log(window.innerWidth);
       } else if (titleEl) {
         const {width} = titleEl.getBoundingClientRect();
         setScreenWidth(window.innerWidth - width);
-        console.log(window.innerWidth - width);
       }
     }
   }, []);
